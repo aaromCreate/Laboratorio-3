@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.grbDatos = new System.Windows.Forms.GroupBox();
             this.btnCuenta = new System.Windows.Forms.Button();
@@ -50,10 +51,14 @@
             this.rdbDeposito = new System.Windows.Forms.RadioButton();
             this.rdbRetiro = new System.Windows.Forms.RadioButton();
             this.label7 = new System.Windows.Forms.Label();
+            this.erpCliente = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpSaldo = new System.Windows.Forms.ErrorProvider(this.components);
             this.grbDatos.SuspendLayout();
             this.grbSeccion.SuspendLayout();
             this.grbCuenta.SuspendLayout();
             this.grbTransacciones.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erpCliente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpSaldo)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -89,6 +94,7 @@
             this.btnCuenta.TabIndex = 14;
             this.btnCuenta.Text = "Abrir cuenta";
             this.btnCuenta.UseVisualStyleBackColor = true;
+            this.btnCuenta.Click += new System.EventHandler(this.btnCuenta_Click);
             // 
             // txtIinicial
             // 
@@ -98,6 +104,7 @@
             this.txtIinicial.Name = "txtIinicial";
             this.txtIinicial.Size = new System.Drawing.Size(170, 30);
             this.txtIinicial.TabIndex = 5;
+            this.txtIinicial.Validating += new System.ComponentModel.CancelEventHandler(this.txtIinicial_Validating);
             // 
             // label3
             // 
@@ -117,6 +124,7 @@
             this.txtCliente.Name = "txtCliente";
             this.txtCliente.Size = new System.Drawing.Size(170, 30);
             this.txtCliente.TabIndex = 3;
+            this.txtCliente.Validating += new System.ComponentModel.CancelEventHandler(this.txtCliente_Validating_1);
             // 
             // label2
             // 
@@ -203,6 +211,7 @@
             this.btnNuevo.TabIndex = 13;
             this.btnNuevo.Text = "Transaccion";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click_1);
             // 
             // txtSaldo
             // 
@@ -230,6 +239,7 @@
             this.lstRetiro.Name = "lstRetiro";
             this.lstRetiro.Size = new System.Drawing.Size(138, 193);
             this.lstRetiro.TabIndex = 10;
+            this.lstRetiro.SelectedIndexChanged += new System.EventHandler(this.lstRetiro_SelectedIndexChanged_1);
             // 
             // lstDeposito
             // 
@@ -239,6 +249,7 @@
             this.lstDeposito.Name = "lstDeposito";
             this.lstDeposito.Size = new System.Drawing.Size(138, 193);
             this.lstDeposito.TabIndex = 9;
+            this.lstDeposito.SelectedIndexChanged += new System.EventHandler(this.lstDeposito_SelectedIndexChanged_1);
             // 
             // grbTransacciones
             // 
@@ -284,11 +295,19 @@
             this.label7.TabIndex = 14;
             this.label7.Text = "Banco bananero";
             // 
+            // erpCliente
+            // 
+            this.erpCliente.ContainerControl = this;
+            // 
+            // erpSaldo
+            // 
+            this.erpSaldo.ContainerControl = this;
+            // 
             // Problema1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(799, 671);
+            this.ClientSize = new System.Drawing.Size(802, 684);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.grbDatos);
@@ -302,6 +321,8 @@
             this.grbCuenta.PerformLayout();
             this.grbTransacciones.ResumeLayout(false);
             this.grbTransacciones.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erpCliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpSaldo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -331,5 +352,7 @@
         private System.Windows.Forms.RadioButton rdbDeposito;
         private System.Windows.Forms.RadioButton rdbRetiro;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ErrorProvider erpCliente;
+        private System.Windows.Forms.ErrorProvider erpSaldo;
     }
 }
