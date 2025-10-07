@@ -28,13 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.MnuBanco = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuNumero = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuImporte = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuSesion = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // menuStrip2
+            // 
+            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MnuBanco,
+            this.MnuNumero,
+            this.MnuImporte,
+            this.MnuSesion});
+            this.menuStrip2.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip2.Name = "menuStrip2";
+            this.menuStrip2.Size = new System.Drawing.Size(800, 29);
+            this.menuStrip2.TabIndex = 1;
+            this.menuStrip2.Text = "menuStrip2";
             // 
             // MnuBanco
             // 
@@ -68,19 +81,6 @@
             this.MnuSesion.Text = "INICIO DE SESION";
             this.MnuSesion.Click += new System.EventHandler(this.MnuSesion_Click);
             // 
-            // menuStrip2
-            // 
-            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MnuBanco,
-            this.MnuNumero,
-            this.MnuImporte,
-            this.MnuSesion});
-            this.menuStrip2.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(800, 29);
-            this.menuStrip2.TabIndex = 1;
-            this.menuStrip2.Text = "menuStrip2";
-            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -98,12 +98,11 @@
         }
 
         #endregion
-
+        private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem MnuBanco;
         private System.Windows.Forms.ToolStripMenuItem MnuNumero;
         private System.Windows.Forms.ToolStripMenuItem MnuImporte;
         private System.Windows.Forms.ToolStripMenuItem MnuSesion;
-        private System.Windows.Forms.MenuStrip menuStrip2;
     }
 }
 

@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cuenta.cs" />
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,8 +81,6 @@
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Problema1.resx">
-      <DependentUpon>Problema1.cs</DependentUpon>
     <EmbeddedResource Include="Problema3.resx">
       <DependentUpon>Problema3.cs</DependentUpon>
     </EmbeddedResource>
