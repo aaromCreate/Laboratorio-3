@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -39,12 +38,13 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -56,16 +56,6 @@
             this.label1.Size = new System.Drawing.Size(442, 55);
             this.label1.TabIndex = 0;
             this.label1.Text = "Orden de Importes";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Laboratorio_3.Properties.Resources.Anotación_2025_10_02_090856;
-            this.pictureBox1.Location = new System.Drawing.Point(40, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(121, 88);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // panel1
             // 
@@ -118,7 +108,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(93, 40);
+            this.button2.Location = new System.Drawing.Point(89, 42);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(149, 44);
             this.button2.TabIndex = 7;
@@ -160,6 +150,16 @@
             this.panel3.Size = new System.Drawing.Size(320, 344);
             this.panel3.TabIndex = 10;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Laboratorio_3.Properties.Resources.Anotación_2025_10_02_090856;
+            this.pictureBox1.Location = new System.Drawing.Point(40, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(121, 88);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // Problema3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -170,7 +170,6 @@
             this.Controls.Add(this.panel1);
             this.Name = "Problema3";
             this.Text = "Problema3";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -178,6 +177,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

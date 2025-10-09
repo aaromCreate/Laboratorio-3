@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Numero.cs" />
     <Compile Include="Cuenta.cs" />
+    <Compile Include="Ordenado.cs" />
     <Compile Include="VerificaciondeCuenta.cs" />
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -85,8 +86,14 @@
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Problema1.resx">
+      <DependentUpon>Problema1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Problema2.resx">
       <DependentUpon>Problema2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Problema3.resx">
+      <DependentUpon>Problema3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Problema4.resx">
       <DependentUpon>Problema4.cs</DependentUpon>

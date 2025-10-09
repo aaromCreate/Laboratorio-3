@@ -88,7 +88,7 @@
             // 
             // btnCuenta
             // 
-            this.btnCuenta.Location = new System.Drawing.Point(465, 42);
+            this.btnCuenta.Location = new System.Drawing.Point(478, 45);
             this.btnCuenta.Name = "btnCuenta";
             this.btnCuenta.Size = new System.Drawing.Size(143, 43);
             this.btnCuenta.TabIndex = 14;
