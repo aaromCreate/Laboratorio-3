@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace Laboratorio_3
 {
@@ -17,55 +12,35 @@ namespace Laboratorio_3
             InitializeComponent();
         }
 
-        private List<decimal> importes = new List<decimal>();
-
-        private void button1_Click(object sender, EventArgs e)
+        Ordenado ordenado = new Ordenado();
+        private void txtIngresar_KeyPress(object sender, KeyPressEventArgs e)
         {
-            decimal valor;
-
-            if (decimal.TryParse(textBox1.Text, out valor))
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
             {
-                importes.Add(valor);
-
-                dataGridView1.Columns.Clear();
-                dataGridView1.Rows.Clear();
-                dataGridView1.ColumnCount = 1;
-                dataGridView1.Columns[0].Name = "Importe";
-
-                foreach (var importe in importes)
-                {
-                    dataGridView1.Rows.Add(importe.ToString("C"));
-                }
-
-                textBox1.Clear();
-                textBox1.Focus();
+                e.Handled = true;
             }
-            else
+            if ((e.KeyChar == '.') && ((sender as System.Windows.Forms.TextBox).Text.IndexOf('.') > -1))
             {
-                MessageBox.Show("Ingrese un importe válido.", "Error");
-                textBox1.Clear();
-                textBox1.Focus();
+                e.Handled = true;
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnIngresar_Click(object sender, EventArgs e)
         {
-            decimal min = 75m;
-            decimal max = 215m;
 
-            // Filtrar y ordenar los importes
-            var importesFiltrados = importes.Where(i => i >= min && i <= max).OrderBy(i => i).ToList();
+            ordenado.AgregarImporte(txtIngresar.Text);
 
-            // Mostrar en el DataGridView derecho
-            dataGridView2.Columns.Clear();
-            dataGridView2.Rows.Clear();
-            dataGridView2.ColumnCount = 1;
-            dataGridView2.Columns[0].Name = "Importes entre $75 y $215";
+            txtIngresar.Clear();
+            txtIngresar.Focus();
 
-            foreach (var importe in importesFiltrados)
-            {
-                dataGridView2.Rows.Add(importe.ToString("C"));
-            }
+            ordenado.ImprimirImportes(dataGridImportes);
+        }
+
+        private void btnOrdenar_Click(object sender, EventArgs e)
+        {
+            ordenado.FiltrarImportes();
+
+            ordenado.ImprimirImportesFiltrados(dataGridOrdenado);
         }
     }
 }
