@@ -25,6 +25,10 @@ namespace Laboratorio_3
             {
                 this.erpCliente.SetError((Control)sender, "No puede estar en blanco");
             }
+            else
+            {
+                                this.erpCliente.SetError((Control)sender, "");
+            }
         }
 
         private void txtIinicial_Validating(object sender, CancelEventArgs e)
@@ -33,6 +37,10 @@ namespace Laboratorio_3
             {
                 this.erpSaldo.SetError((Control)sender, "No puede estar en blanco");
 
+            }
+            else
+            {
+                this.erpSaldo.SetError((Control)sender, "");
             }
         }
 
@@ -45,7 +53,7 @@ namespace Laboratorio_3
                 double saldoActual = Convert.ToDouble(txtIinicial.Text);
                 if (saldoActual < 0)
                 {
-                    MessageBox.Show("El monto inicial debe ser mayor 0");
+                    MessageBox.Show("El monto inicial debe ser mayor 0","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
                     return;
                 }
                 else
@@ -56,7 +64,7 @@ namespace Laboratorio_3
             }
             catch (FormatException)
             {
-                MessageBox.Show("Ingrese un valor numerico en los campos de saldo inicial y monto actual");
+                MessageBox.Show("Ingrese un valor numerico en los campos de saldo inicial y monto actual", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
         }
@@ -74,7 +82,7 @@ namespace Laboratorio_3
             {
                 if (monto > cuenta.getSaldo())
                 {
-                    MessageBox.Show("No puede retirar mas de lo que tiene en su cuenta");
+                    MessageBox.Show("No puede retirar mas de lo que tiene en su cuenta", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
                 else
@@ -86,7 +94,7 @@ namespace Laboratorio_3
             }
             else
             {
-                MessageBox.Show("Seleccione alguna opcion");
+                MessageBox.Show("Seleccione alguna opcion", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
 
             }
@@ -111,7 +119,7 @@ namespace Laboratorio_3
 
                 if (cuenta.getSaldo() - montoAEliminar < 0)
                 {
-                    MessageBox.Show("No se puede eliminar esta transacción porque dejaría el saldo negativo.");
+                    MessageBox.Show("No se puede eliminar esta transacción porque dejaría el saldo negativo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {

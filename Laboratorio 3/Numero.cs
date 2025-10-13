@@ -24,7 +24,7 @@ namespace Laboratorio_3
                 }
                 else
                 {
-                    MessageBox.Show("Debe ingresar un número entero");
+                    MessageBox.Show("Debe ingresar un número entero", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
 

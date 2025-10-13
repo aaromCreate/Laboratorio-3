@@ -22,7 +22,7 @@ namespace Laboratorio_3
 
             else
             {
-                MessageBox.Show("Ingrese un importe válido (mayor que 0).");
+                MessageBox.Show("Ingrese un importe válido (mayor que 0).", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
