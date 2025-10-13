@@ -30,21 +30,21 @@
         {
             this.txtTitulo = new System.Windows.Forms.Label();
             this.panelEncabezado = new System.Windows.Forms.Panel();
+            this.picImagenTitulo = new System.Windows.Forms.PictureBox();
             this.txtImporte = new System.Windows.Forms.Label();
             this.txtIngresar = new System.Windows.Forms.TextBox();
             this.btnIngresar = new System.Windows.Forms.Button();
             this.dataGridImportes = new System.Windows.Forms.DataGridView();
             this.btnOrdenar = new System.Windows.Forms.Button();
             this.dataGridOrdenado = new System.Windows.Forms.DataGridView();
-            this.panelImportar = new System.Windows.Forms.Panel();
-            this.panelOrdenar = new System.Windows.Forms.Panel();
-            this.picImagenTitulo = new System.Windows.Forms.PictureBox();
+            this.pnlImportar = new System.Windows.Forms.Panel();
+            this.pnlOrdenar = new System.Windows.Forms.Panel();
             this.panelEncabezado.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picImagenTitulo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridImportes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridOrdenado)).BeginInit();
-            this.panelImportar.SuspendLayout();
-            this.panelOrdenar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picImagenTitulo)).BeginInit();
+            this.pnlImportar.SuspendLayout();
+            this.pnlOrdenar.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtTitulo
@@ -69,6 +69,17 @@
             this.panelEncabezado.Name = "panelEncabezado";
             this.panelEncabezado.Size = new System.Drawing.Size(1208, 197);
             this.panelEncabezado.TabIndex = 2;
+            // 
+            // picImagenTitulo
+            // 
+            this.picImagenTitulo.Image = global::Laboratorio_3.Properties.Resources.Anotación_2025_10_02_090856;
+            this.picImagenTitulo.Location = new System.Drawing.Point(60, 32);
+            this.picImagenTitulo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.picImagenTitulo.Name = "picImagenTitulo";
+            this.picImagenTitulo.Size = new System.Drawing.Size(182, 135);
+            this.picImagenTitulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picImagenTitulo.TabIndex = 1;
+            this.picImagenTitulo.TabStop = false;
             // 
             // txtImporte
             // 
@@ -139,62 +150,51 @@
             this.dataGridOrdenado.Size = new System.Drawing.Size(360, 298);
             this.dataGridOrdenado.TabIndex = 8;
             // 
-            // panelImportar
+            // pnlImportar
             // 
-            this.panelImportar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.panelImportar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelImportar.Controls.Add(this.dataGridImportes);
-            this.panelImportar.Controls.Add(this.btnIngresar);
-            this.panelImportar.Controls.Add(this.txtIngresar);
-            this.panelImportar.Controls.Add(this.txtImporte);
-            this.panelImportar.Location = new System.Drawing.Point(36, 229);
-            this.panelImportar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panelImportar.Name = "panelImportar";
-            this.panelImportar.Size = new System.Drawing.Size(486, 528);
-            this.panelImportar.TabIndex = 9;
+            this.pnlImportar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.pnlImportar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlImportar.Controls.Add(this.dataGridImportes);
+            this.pnlImportar.Controls.Add(this.btnIngresar);
+            this.pnlImportar.Controls.Add(this.txtIngresar);
+            this.pnlImportar.Controls.Add(this.txtImporte);
+            this.pnlImportar.Location = new System.Drawing.Point(36, 229);
+            this.pnlImportar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlImportar.Name = "pnlImportar";
+            this.pnlImportar.Size = new System.Drawing.Size(486, 528);
+            this.pnlImportar.TabIndex = 9;
             // 
-            // panelOrdenar
+            // pnlOrdenar
             // 
-            this.panelOrdenar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.panelOrdenar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelOrdenar.Controls.Add(this.dataGridOrdenado);
-            this.panelOrdenar.Controls.Add(this.btnOrdenar);
-            this.panelOrdenar.Location = new System.Drawing.Point(693, 229);
-            this.panelOrdenar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panelOrdenar.Name = "panelOrdenar";
-            this.panelOrdenar.Size = new System.Drawing.Size(479, 528);
-            this.panelOrdenar.TabIndex = 10;
-            // 
-            // picImagenTitulo
-            // 
-            this.picImagenTitulo.Image = global::Laboratorio_3.Properties.Resources.Anotación_2025_10_02_090856;
-            this.picImagenTitulo.Location = new System.Drawing.Point(60, 32);
-            this.picImagenTitulo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.picImagenTitulo.Name = "picImagenTitulo";
-            this.picImagenTitulo.Size = new System.Drawing.Size(182, 135);
-            this.picImagenTitulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picImagenTitulo.TabIndex = 1;
-            this.picImagenTitulo.TabStop = false;
+            this.pnlOrdenar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.pnlOrdenar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlOrdenar.Controls.Add(this.dataGridOrdenado);
+            this.pnlOrdenar.Controls.Add(this.btnOrdenar);
+            this.pnlOrdenar.Location = new System.Drawing.Point(693, 229);
+            this.pnlOrdenar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlOrdenar.Name = "pnlOrdenar";
+            this.pnlOrdenar.Size = new System.Drawing.Size(479, 528);
+            this.pnlOrdenar.TabIndex = 10;
             // 
             // Problema3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 788);
-            this.Controls.Add(this.panelOrdenar);
-            this.Controls.Add(this.panelImportar);
+            this.Controls.Add(this.pnlOrdenar);
+            this.Controls.Add(this.pnlImportar);
             this.Controls.Add(this.panelEncabezado);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Problema3";
             this.Text = "Problema3";
             this.panelEncabezado.ResumeLayout(false);
             this.panelEncabezado.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picImagenTitulo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridImportes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridOrdenado)).EndInit();
-            this.panelImportar.ResumeLayout(false);
-            this.panelImportar.PerformLayout();
-            this.panelOrdenar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picImagenTitulo)).EndInit();
+            this.pnlImportar.ResumeLayout(false);
+            this.pnlImportar.PerformLayout();
+            this.pnlOrdenar.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -210,7 +210,7 @@
         private System.Windows.Forms.DataGridView dataGridImportes;
         private System.Windows.Forms.Button btnOrdenar;
         private System.Windows.Forms.DataGridView dataGridOrdenado;
-        private System.Windows.Forms.Panel panelImportar;
-        private System.Windows.Forms.Panel panelOrdenar;
+        private System.Windows.Forms.Panel pnlImportar;
+        private System.Windows.Forms.Panel pnlOrdenar;
     }
 }

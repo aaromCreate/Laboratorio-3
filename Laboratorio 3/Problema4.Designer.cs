@@ -39,18 +39,18 @@
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlRegistro = new System.Windows.Forms.Panel();
+            this.picUsuario = new System.Windows.Forms.PictureBox();
             this.erpError = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpErrorNom = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpErrorApe = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpErrorCorreo = new System.Windows.Forms.ErrorProvider(this.components);
-            this.picUsuario = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
+            this.pnlRegistro.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picUsuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpError)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpErrorNom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpErrorApe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpErrorCorreo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUsuario)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -182,24 +182,35 @@
             this.btnRegistrar.UseVisualStyleBackColor = true;
             this.btnRegistrar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // panel1
+            // pnlRegistro
             // 
-            this.panel1.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panel1.Controls.Add(this.picUsuario);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.txtNombre);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.txtApellido);
-            this.panel1.Controls.Add(this.txtCorreo);
-            this.panel1.Controls.Add(this.btnRegistrar);
-            this.panel1.Controls.Add(this.txtContraseña);
-            this.panel1.Location = new System.Drawing.Point(145, 131);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(971, 547);
-            this.panel1.TabIndex = 10;
+            this.pnlRegistro.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.pnlRegistro.Controls.Add(this.picUsuario);
+            this.pnlRegistro.Controls.Add(this.label5);
+            this.pnlRegistro.Controls.Add(this.txtNombre);
+            this.pnlRegistro.Controls.Add(this.label2);
+            this.pnlRegistro.Controls.Add(this.label3);
+            this.pnlRegistro.Controls.Add(this.label4);
+            this.pnlRegistro.Controls.Add(this.txtApellido);
+            this.pnlRegistro.Controls.Add(this.txtCorreo);
+            this.pnlRegistro.Controls.Add(this.btnRegistrar);
+            this.pnlRegistro.Controls.Add(this.txtContraseña);
+            this.pnlRegistro.Location = new System.Drawing.Point(145, 131);
+            this.pnlRegistro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlRegistro.Name = "pnlRegistro";
+            this.pnlRegistro.Size = new System.Drawing.Size(971, 547);
+            this.pnlRegistro.TabIndex = 10;
+            // 
+            // picUsuario
+            // 
+            this.picUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.picUsuario.Image = global::Laboratorio_3.Properties.Resources.userlogo;
+            this.picUsuario.Location = new System.Drawing.Point(438, 10);
+            this.picUsuario.Name = "picUsuario";
+            this.picUsuario.Size = new System.Drawing.Size(152, 129);
+            this.picUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picUsuario.TabIndex = 0;
+            this.picUsuario.TabStop = false;
             // 
             // erpError
             // 
@@ -217,17 +228,6 @@
             // 
             this.erpErrorCorreo.ContainerControl = this;
             // 
-            // picUsuario
-            // 
-            this.picUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.picUsuario.Image = global::Laboratorio_3.Properties.Resources.userlogo;
-            this.picUsuario.Location = new System.Drawing.Point(438, 10);
-            this.picUsuario.Name = "picUsuario";
-            this.picUsuario.Size = new System.Drawing.Size(152, 129);
-            this.picUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picUsuario.TabIndex = 0;
-            this.picUsuario.TabStop = false;
-            // 
             // Problema4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -235,17 +235,17 @@
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlRegistro);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Problema4";
             this.Text = "Problema4";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlRegistro.ResumeLayout(false);
+            this.pnlRegistro.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picUsuario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpError)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpErrorNom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpErrorApe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpErrorCorreo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUsuario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,7 +263,7 @@
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.Button btnRegistrar;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlRegistro;
         private System.Windows.Forms.ErrorProvider erpError;
         private System.Windows.Forms.ErrorProvider erpErrorNom;
         private System.Windows.Forms.ErrorProvider erpErrorApe;
