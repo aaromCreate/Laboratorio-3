@@ -6,15 +6,7 @@ using System.Windows.Forms;
 
 public static class Verficacion
 {
-    public static bool ValidarTodo(
-        ref TextBox txtNombre,
-        ref TextBox txtApellido,
-        ref TextBox txtCorreo,
-        ref TextBox txtContraseña,
-        ref ErrorProvider erpErrorNom,
-        ref ErrorProvider erpErrorApe,
-        ref ErrorProvider erpErrorCorreo,
-        ref ErrorProvider erpErrorContraseña)
+    public static bool ValidarTodo(ref TextBox txtNombre, ref TextBox txtApellido, ref TextBox txtCorreo, ref TextBox txtContraseña, ref ErrorProvider erpErrorNom, ref ErrorProvider erpErrorApe, ref ErrorProvider erpErrorCorreo, ref ErrorProvider erpErrorContraseña)
     {
         bool esValido = true;
 

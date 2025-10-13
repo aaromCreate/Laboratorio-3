@@ -44,21 +44,26 @@
             this.erpErrorNom = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpErrorApe = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpErrorCorreo = new System.Windows.Forms.ErrorProvider(this.components);
+            this.picUsuario = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.erpError)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpErrorNom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpErrorApe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpErrorCorreo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUsuario)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Azure;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(245, 21);
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(404, 32);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(357, 46);
+            this.label1.Size = new System.Drawing.Size(538, 67);
             this.label1.TabIndex = 0;
             this.label1.Text = "Formulario de Registro";
             // 
@@ -68,9 +73,10 @@
             this.label2.BackColor = System.Drawing.Color.Azure;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(70, 46);
+            this.label2.Location = new System.Drawing.Point(106, 164);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 26);
+            this.label2.Size = new System.Drawing.Size(121, 35);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nombre";
             // 
@@ -80,9 +86,10 @@
             this.label3.BackColor = System.Drawing.Color.Azure;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(68, 106);
+            this.label3.Location = new System.Drawing.Point(103, 256);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 26);
+            this.label3.Size = new System.Drawing.Size(121, 35);
             this.label3.TabIndex = 2;
             this.label3.Text = "Apellido";
             // 
@@ -92,9 +99,10 @@
             this.label4.BackColor = System.Drawing.Color.Azure;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(70, 160);
+            this.label4.Location = new System.Drawing.Point(106, 339);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 26);
+            this.label4.Size = new System.Drawing.Size(106, 35);
             this.label4.TabIndex = 3;
             this.label4.Text = "Correo";
             // 
@@ -104,19 +112,21 @@
             this.label5.BackColor = System.Drawing.Color.Azure;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(55, 211);
+            this.label5.Location = new System.Drawing.Point(83, 418);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(108, 26);
+            this.label5.Size = new System.Drawing.Size(167, 35);
             this.label5.TabIndex = 4;
             this.label5.Text = "Contraseña";
             // 
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(172, 40);
+            this.txtNombre.Location = new System.Drawing.Point(259, 155);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNombre.Multiline = true;
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(352, 32);
+            this.txtNombre.Size = new System.Drawing.Size(526, 47);
             this.txtNombre.TabIndex = 5;
             this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             this.txtNombre.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtNombre_KeyUp);
@@ -125,10 +135,11 @@
             // txtApellido
             // 
             this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellido.Location = new System.Drawing.Point(172, 100);
+            this.txtApellido.Location = new System.Drawing.Point(259, 247);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtApellido.Multiline = true;
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(352, 32);
+            this.txtApellido.Size = new System.Drawing.Size(526, 47);
             this.txtApellido.TabIndex = 6;
             this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellido_KeyPress);
             this.txtApellido.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtApellido_KeyUp);
@@ -137,10 +148,11 @@
             // txtCorreo
             // 
             this.txtCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCorreo.Location = new System.Drawing.Point(172, 155);
+            this.txtCorreo.Location = new System.Drawing.Point(259, 331);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCorreo.Multiline = true;
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(352, 32);
+            this.txtCorreo.Size = new System.Drawing.Size(526, 47);
             this.txtCorreo.TabIndex = 7;
             this.txtCorreo.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtCorreo_KeyUp);
             this.txtCorreo.Validating += new System.ComponentModel.CancelEventHandler(this.txtCorreo_Validating);
@@ -148,10 +160,11 @@
             // txtContraseña
             // 
             this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContraseña.Location = new System.Drawing.Point(172, 208);
+            this.txtContraseña.Location = new System.Drawing.Point(259, 413);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtContraseña.Multiline = true;
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(352, 32);
+            this.txtContraseña.Size = new System.Drawing.Size(526, 47);
             this.txtContraseña.TabIndex = 8;
             this.txtContraseña.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtContraseña_KeyDown);
             this.txtContraseña.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtContraseña_KeyUp);
@@ -160,9 +173,10 @@
             // btnRegistrar
             // 
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(226, 285);
+            this.btnRegistrar.Location = new System.Drawing.Point(374, 485);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(178, 33);
+            this.btnRegistrar.Size = new System.Drawing.Size(267, 51);
             this.btnRegistrar.TabIndex = 9;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
@@ -170,7 +184,8 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Silver;
+            this.panel1.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.panel1.Controls.Add(this.picUsuario);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.txtNombre);
             this.panel1.Controls.Add(this.label2);
@@ -180,9 +195,10 @@
             this.panel1.Controls.Add(this.txtCorreo);
             this.panel1.Controls.Add(this.btnRegistrar);
             this.panel1.Controls.Add(this.txtContraseña);
-            this.panel1.Location = new System.Drawing.Point(95, 85);
+            this.panel1.Location = new System.Drawing.Point(145, 131);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(625, 333);
+            this.panel1.Size = new System.Drawing.Size(971, 547);
             this.panel1.TabIndex = 10;
             // 
             // erpError
@@ -201,14 +217,26 @@
             // 
             this.erpErrorCorreo.ContainerControl = this;
             // 
+            // picUsuario
+            // 
+            this.picUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.picUsuario.Image = global::Laboratorio_3.Properties.Resources.userlogo;
+            this.picUsuario.Location = new System.Drawing.Point(438, 10);
+            this.picUsuario.Name = "picUsuario";
+            this.picUsuario.Size = new System.Drawing.Size(152, 129);
+            this.picUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picUsuario.TabIndex = 0;
+            this.picUsuario.TabStop = false;
+            // 
             // Problema4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Problema4";
             this.Text = "Problema4";
             this.panel1.ResumeLayout(false);
@@ -217,6 +245,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.erpErrorNom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpErrorApe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpErrorCorreo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUsuario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,5 +268,6 @@
         private System.Windows.Forms.ErrorProvider erpErrorNom;
         private System.Windows.Forms.ErrorProvider erpErrorApe;
         private System.Windows.Forms.ErrorProvider erpErrorCorreo;
+        private System.Windows.Forms.PictureBox picUsuario;
     }
 }
