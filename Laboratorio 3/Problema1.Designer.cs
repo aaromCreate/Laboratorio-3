@@ -115,6 +115,7 @@
             this.txtIinicial.Name = "txtIinicial";
             this.txtIinicial.Size = new System.Drawing.Size(254, 45);
             this.txtIinicial.TabIndex = 5;
+            this.txtIinicial.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIinicial_KeyPress);
             this.txtIinicial.Validating += new System.ComponentModel.CancelEventHandler(this.txtIinicial_Validating);
             // 
             // label3
@@ -231,6 +232,7 @@
             this.txtMonto.Name = "txtMonto";
             this.txtMonto.Size = new System.Drawing.Size(134, 51);
             this.txtMonto.TabIndex = 15;
+            this.txtMonto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMonto_KeyPress);
             // 
             // btnNuevo
             // 
