@@ -71,7 +71,20 @@ namespace Laboratorio_3
 
         private void btnNuevo_Click_1(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(txtMonto.Text))
+            {
+                MessageBox.Show("Ingrese un monto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             double monto = Convert.ToDouble(txtMonto.Text);
+
+            if (monto <= 0)
+            {
+                MessageBox.Show("El monto debe ser mayor a 0", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             if (rdbDeposito.Checked)
             {
                 cuenta.depositar(monto);
@@ -98,6 +111,7 @@ namespace Laboratorio_3
                 return;
 
             }
+            
         }
 
         private void lstRetiro_SelectedIndexChanged_1(object sender, EventArgs e)
